@@ -13,14 +13,15 @@ SELECT t0.Name as Employee
         t0.Salary > t1.Salary;
 */
 
-
+/*
 SELECT t0.Name Employee FROM Employee as t0
     JOIN Employee t1 on t0.ManagerId=t1.Id
     AND
     t0.Salary > t1.Salary;
+*/
 
 
 SELECT a.Name Employee FROM Employee as a
-    JOIN Employee a on a.ManagerId=b.Id
+    JOIN Employee b on a.ManagerId=b.Id
     AND
     a.Salary > b.Salary;
